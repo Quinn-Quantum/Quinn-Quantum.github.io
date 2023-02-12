@@ -18,7 +18,7 @@ header{
     text-align: center;
 }
 
-main{
+.normal{
     margin-top:10%;
     margin-left: 20%;
     border-color: black;
@@ -33,6 +33,9 @@ main{
 
 p{
     font-size: 18px;
+}
+details{
+    margin: 2%;
 }
 
 button{
@@ -53,5 +56,47 @@ button{
 button:hover{
 	border-color:midnightblue;
 	color:midnightblue;
+    
 	border-radius:5px 15px;
 }
+
+.Dev{
+    background-color: rgb(254, 229, 182);
+    border-color: black;
+    border-style: solid;
+    border-radius:10px 25%;
+    margin-top: 1%;
+    padding-bottom: 5%;
+}
+#infosToDev{
+    margin-top: 1%;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #a0c9c4;
+    color: midnightblue;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: 0 18px;
+    width: 50%;
+    display: none;
+    overflow: hidden;
+    background-color: #a0c9c4;
+  }
