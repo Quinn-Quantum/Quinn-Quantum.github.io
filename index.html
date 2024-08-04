@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Quintilius Melentor der III</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="index.css">      
-    </head> 
-    <h1>Projekte</h1>    
+  <head>
+    <title>IT und Kunst</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  
+  <body>
+    <nav>
+      <ul>
+        <li><a onclick="home()">Home</a></li>
+        <li><a onclick="it()">Anwendungen</a></li>
+        <li><a onclick="art()">Kunst Projekte</a></li>
+      </ul>
+    </nav>
+
+    <div class="content" id="allgemein"></div>
+
+    <div class="content" id="art">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="W20.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Geburtstagsgeschenk für einen PnP Liebhaber. Angefertig 2021.</div>
+      </div>
+    </div>
+
+    <div class="content" id="programme">
+      <h1>Programmier Projekte</h1>
       <table>
         <tr>
-          <th>Was</th>
-          <th>Wo</th>
+          <th>Projektname</th>
+          <th>GitHup</th>
         </tr>
         <tr>
           <td>Das erste Text-Adventure</td>
-          <td><a href="https://github.com/Quinn-Quantum/The_Cave">The Cave</a></td>
+          <td>
+            <a href="https://github.com/Quinn-Quantum/The_Cave">The Cave</a>
+          </td>
         </tr>
         <tr>
           <td>Der erste größere Versuche einer Webseite</td>
@@ -31,40 +56,37 @@
         <tr>
           <td>Das erste Schrit mit 3D Modellen</td>
           <td>
-            <a href="https://github.com/Quinn-Quantum/bomberJam64">bomber Jam 64 </a>
+            <a href="https://github.com/Quinn-Quantum/bomberJam64"
+              >bomber Jam 64
+            </a>
           </td>
         </tr>
         <tr>
           <td>Erstes größeres Schulprojekt</td>
           <td>
             <a href="https://github.com/Quinn-Quantum/Monsters_of_Cards"
-            >Monsters_of_Cards
-          </a>
+              >Monsters of Cards
+            </a>
           </td>
         </tr>
       </table>
+    </div>
+
+    
+    <div id="impressum">
+      <h1>Impressum</h1>
+      <p> 
+      </p>
+
+    </div>
+
+  </body>
+
+  <footer>
+    <ul>
+      <li><a onclick="impressum()">Impressum</a></li>
+      
+    </ul>
+  </footer>
 </html>
 
-<style>
-
-    tr:nth-child(even) {
-      background-color: bisque;
-      color: #000;
-    }
-    
-    table {
-        border-collapse: separate;
-        border-spacing: 0.2em;
-    }
-    
-    th,
-    td {
-        padding: 0.2em 0.5em;
-        border-radius: 0.1em;
-    }
-
-    a{
-      color: black;
-    }
-    
-    </style>
