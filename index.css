@@ -67,7 +67,7 @@ header{
 section{
   min-height: 100vh;
   padding:5rem 9% 5rem;
-      display: flex;
+      display: fixed;
       text-align: center;
       justify-content: center;
       align-items: center;
@@ -83,6 +83,7 @@ span{
 }
 .home-img{
   border-radius: 50%;
+  padding-bottom: 1em;
 }
 .home-img img{
   position: flex;
@@ -104,13 +105,6 @@ span{
   align-items: center;
   margin: 3rem;
   background-color: transparent;
-}
-
-#art{
-    display: none;
-}
-#programme{
-    display: none;
 }
 
 
