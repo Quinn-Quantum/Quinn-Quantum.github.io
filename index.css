@@ -65,15 +65,13 @@ header{
 
 /* Seiten */
 section{
-min-height: 100vh;
-padding:5rem 9% 5rem
-}
- .content{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
+  min-height: 100vh;
+  padding:5rem 9% 5rem;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 8rem;
 }
 .home-content h1{
   font-size:4rem;
