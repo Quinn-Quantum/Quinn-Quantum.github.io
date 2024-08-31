@@ -1,4 +1,5 @@
 *{
+
     outline: none;font-family:'Poppins' ,Arial; 
   }
   
@@ -9,7 +10,6 @@
     width: 100%;
     height: 100vh;
     margin: 0;
-    padding-left: 10em;
     overflow: auto;
     scroll-behavior: smooth;
     text-align: center;
@@ -69,7 +69,7 @@
   section{
     min-height: 100vh;
     padding-top: 5rem;
-    padding-bottom: 5000rem;
+    padding-bottom: 5rem;
     padding-left: 20%;
         display: fixed;
         text-align: center;

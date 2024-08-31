@@ -1,9 +1,5 @@
 *{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
+
   outline: none;font-family:'Poppins' ,Arial;
 }
 
@@ -13,6 +9,9 @@ html{
 body{
   width: 100%;
   height: 100vh;
+  text-align: center;
+      justify-content: center;
+      align-items: center;
 }
 
 header{
@@ -66,7 +65,9 @@ header{
 /* Seiten */
 section{
   min-height: 100vh;
-  padding:5rem 9% 5rem;
+  padding-top: 5em;
+    padding-bottom: 5rem;
+    padding-left: 0%;
       display: fixed;
       text-align: center;
       justify-content: center;
@@ -84,6 +85,7 @@ span{
 .home-img{
   border-radius: 50%;
   padding-bottom: 1em;
+  padding-top: 3em;
 }
 .home-img img{
   position: flex;
