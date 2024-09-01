@@ -43,20 +43,6 @@
       width: 100%;
     }
   
-  @media(max-width:700px){
-    nav{
-      position:absolute;
-      top:0;
-      right: 0;
-      width: 40%;
-      border-left: 3px solid orangered;
-      border-bottom: 3px solid orangered;
-      border-bottom-left-radius: 1rem;
-      padding: 1rem;
-      border-top: 0.1rem;
-    }
-  
-  }
 
   section{
     min-height: 100vh;
