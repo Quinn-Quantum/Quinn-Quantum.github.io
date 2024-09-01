@@ -11,7 +11,7 @@
   }
   
   header{
-    margin-top:20px;
+    padding-top:20px;
     position:absolute;
     top:0;
     left:0;
@@ -19,7 +19,7 @@
     padding: 1rem 9%;
     filter:drop-shadow(10px);
     display: flex;
-    background-color:transparent;
+    background-color:rgba(137, 43, 226, 0.353);
   }
   
   /* Navbar */
@@ -28,9 +28,12 @@
       display: inline-block !important;
       padding-right: 10px;
     }
-    nav a.active {
-      color:red;
+    nav a{
+      text-decoration: none
     }
+    nav a.active {
+      text-decoration:underline;
+    }  
     nav a::after {
       content: "";
       display: block;
