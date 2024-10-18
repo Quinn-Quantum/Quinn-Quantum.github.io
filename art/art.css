@@ -22,7 +22,7 @@ header {
   width: 100%;
   filter: drop-shadow(10px);
   display: flex;
-  background-color: rgb(203, 155, 248);
+  background-color: rgb(174, 159, 58);
 }
 
 /* Navbar */
@@ -36,6 +36,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
+  color: black;
 }
 nav a.active {
   text-decoration: underline;
@@ -48,8 +49,13 @@ nav a::after {
   width: 0%;
   transition: all ease-in-out 300ms;
 }
-nav a:hover::after {
+nav li a:hover {
   width: 100%;
+  color: #5249fb;
+}
+
+nav li a:focus{
+  color: #5249fb;
 }
 
 section {
@@ -70,8 +76,17 @@ div.gallery {
   width: 180px;
 }
 
+div.gallery p{
+  padding: 0.5em
+}
+
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 2px solid black;
+  color:red
+}
+div.gallery:focus {
+  border: 2px solid black;
+  color:red
 }
 
 div.gallery img {
