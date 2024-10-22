@@ -68,33 +68,28 @@ section {
   gap: 8rem;
 }
 
-/* Gallari */
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery p{
-  padding: 0.5em
-}
-
-div.gallery:hover {
-  border: 2px solid black;
-  color:red
-}
-div.gallery:focus {
-  border: 2px solid black;
-  color:red
-}
-
-div.gallery img {
+.content {
   width: 100%;
-  height: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
+
+
+/* Gallari */
+.gallery {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+ grid-gap: 30px;
+ object-fit: cover;
+  aspect-ratio: 1;
 }
+
+.gallery img {
+  width: 100%;
+ }
+
+

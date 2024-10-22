@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../assets/img/IandPan.png">
     <link rel="stylesheet" type="text/css" href="art.css" />
+    <link rel="stylesheet" type="text/css" href="lightbox.css" />
     <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="../assets/fontawesome/css/brands.css" rel="stylesheet" />
   <link href="../assets/fontawesome/css/solid.css" rel="stylesheet" />
     <script src="../index.js"></script>
+    <script src="./lightbox-plus-jquery.js"></script>
     
   </head>
 </body>
@@ -21,18 +23,55 @@
             <!-- <li><a id="navContect" >Kontakt</a></li> -->
   </nav>
   </header>
+
 <section class="content" id="art">
     <div class="gallery">
-      <a target="_blank" href="../assets/img/W20.jpg">
-        <img src="../assets/img/W20.jpg" alt="W 20" width="600" height="400">
+      <a href="./images/Gallery/W20.jpg" data-lightbox="Meine Kunstwerke" data-title="20 Seitiger Würfel in Eis"><img src="./images/Gallery/W20.jpg" alt="W 20"  height="400"></a>
+
+      <a href="./images/Gallery/Blume_2.png" data-lightbox="Meine Kunstwerke" data-title="Eine Blume">
+        <img src="./images/Gallery/Blume_2.png" alt="Blume mit Bleistift gezeichnet" >
       </a>
-      <p class="desc">Geburtstagsgeschenk für einen PnP Liebhaber. Angefertig 2021.</p>
+
+      <a href="./images/Gallery/Blume_1.png" data-lightbox="Meine Kunstwerke" data-title="Eine Blume">
+        <img src="./images/Gallery/Blume_1.png" alt="Blume mit Bleistift gezeichnet" >
+      </a>
+
+      <a href="./images/Gallery/Rakete.png" data-lightbox="Meine Kunstwerke" data-title="Rakete zu den Sternen">
+        <img src="./images/Gallery/Rakete.png" alt="Eine Rakete" >
+        
+      </a>
+
+      <a href="./images/Gallery/Dino.png" data-lightbox="Meine Kunstwerke" data-title="Der Dinosaurier im Vergessenentahl">
+        <img src="./images/Gallery/Dino.png" alt="Ein Dinosaurier und ein Heisluftballong" >
+      </a>
+        
+        
+        
+        
+        
+      
+      
     </div>
   </section>
+
+  <!-- 
+  <i class="fa-solid fa-xmark"></i> x
+  <i class="fa-solid fa-chevron-right"></i>
+  <i class="fa-solid fa-chevron-left"></i>
+  -->
 
 </body>
 
 <footer>
  
 </footer>
+<script>
+  lightbox.option({
+    'fadeDuration': 100,
+    'alwaysShowNavOnTouchDevices': true,
+    'fitImagesInViewport': true,
+    'imageFadeDuration':100,
+    'wrapAround':true
+  })
+</script>
 </html>
