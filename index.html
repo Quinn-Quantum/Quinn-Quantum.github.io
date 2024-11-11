@@ -4,14 +4,16 @@
     <title>IT und Kunst</title>
     <meta charset="utf-8" />
     <meta name="description" content="Maria Siegmann">
-    <meta name="keywords" content="HTML,html, CSS,css, JavaScript,JS,js,javascript, Developer, Quinn,quinn, Quinn Qunantum,quinn qunantum,Quinn-Quantum, quinn-quantum, Maria, Siegmann, Maria Siegmann,Maria siegmann, maria, siegmann, maria siegmann, Kunst, kunst, künstler, Künstler, art, Art, Artist, artist, git quinn quantum, git quinn-quantum">
+    <meta name="keywords" content="HTML,html, CSS,css, JavaScript,JS,js,javascript, Developer, Quinn,quinn, Quinn Qunantum,quinn qunantum,Quinn-Quantum, quinn-quantum, Maria, Siegmann, Maria Siegmann,Maria siegmann, maria, siegmann, maria siegmann, Kunst, kunst, künstler, Künstler, art, Art, Artist, artist, git quinn quantum, git quinn-quantum, pnp, PnP, Cthulhu, Pan and Paper">
     <meta name="author" content="Maria Siegmann">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="./assets/img/IandPan.png">
     <link rel="stylesheet" type="text/css" href="index.css" />
+
     <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
   <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+  
     <script src="index.js"></script>
     
   </head>
@@ -19,15 +21,31 @@
   <body>
     <header>
       <nav>
-        <li><a id="navHome" class="active" href="index.html">Home</a></li>
-          <li><a id="navIt" href="./develop/develop.html" >Anwendungen</a></li>
-            <li><a id="navArt" href="./art/art.html" >Kunst Projekte</a></li>
+        <div id="navMenu">
+          <ul id="navList">
+        <li><a class='navLink' id="navHome" id="active" href="index.html">Home</a></li>
+          <li><a class='navLink' id="navIt" href="./develop/develop.html" >Anwendungen</a></li>
+            <li><a class='navLink' id="navArt" href="./art/art.html" >Kunst Projekte</a></li>
+            <li><a class='navLink' id="navPnp" href="./pnp/pnp.html" >Pan and Paper</a></li>
               <!-- <li><a id="navContect" >Kontakt</a></li> -->
+            </ul>
+                <!-- Close button -->
+           <div id="navClose" onclick="removeMenu()">
+            <button type="button" ><i class="fa-solid fa-xmark"></i></button>
+           </div>          
+           
+          </div>
+
+          <!-- Toggle button -->
+          <div id="navToggle" onclick="showMenu()">
+            <button type="button" ><i class="fa-solid fa-bars"></i></button>
+           </div>
+        
     </nav>
     </header>
     
 
-    <section class="content" id="home">
+    <section class="contentI" id="home">
       <div class="home-img">
         <img src="./assets/img/Ich.png" alt="Ich">
       </div>

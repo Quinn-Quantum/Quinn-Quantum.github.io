@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="../assets/img/IandPan.png">
     <link rel="stylesheet" type="text/css" href="develop.css" />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+
+    <link href="../assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="../assets/fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="../assets/fontawesome/css/solid.css" rel="stylesheet" />
+
     <script src="../index.js"></script>
     
   </head>
-</body>
+<body>
 <header>
         <nav>
-          <li><a id="navHome"  href="../index.html">Home</a></li>
-            <li><a id="navIt" class="active" href="../develop/develop.html" >Anwendungen</a></li>
-              <li><a id="navArt" href="../art/art.html" >Kunst Projekte</a></li>
+          <div id="navMenu">
+            <ul id="navList">
+          <li><a class='navLink' id="navHome"  href="../index.html">Home</a></li>
+            <li><a class='navLink' id="navIt" id="active" href="../develop/develop.html" >Anwendungen</a></li>
+              <li><a class='navLink' id="navArt" href="../art/art.html" >Kunst Projekte</a></li>
+              <li><a class='navLink' id="navPnp" href="../pnp/pnp.html" >Pan and Paper</a></li>
                 <!-- <li><a id="navContect" >Kontakt</a></li> -->
+              </ul>
+              <!-- Close button -->
+         <div id="navClose" onclick="removeMenu()">
+          <button type="button" ><i class="fa-solid fa-xmark"></i></button>
+         </div>        
+         
+        </div>
+
+        <!-- Toggle button -->
+        <div id="navToggle" onclick="showMenu()">
+          <button type="button" ><i class="fa-solid fa-bars"></i></button>
+         </div>
       </nav>
 </header>
 
@@ -68,7 +89,26 @@
           </a>
       </div>
     </div>
+
+    <div class="checkpoint">
+      <div>
+        <h2>Svelte und FastApi</h2>
+        <p>Wärend der Ausbildung durfte ich mich an einer Umfrageanwendung ausprobieren. Im Frontend habe ich Svelte verwendet und im Backend FastApi und PostgreSQL</p>
+        
+      </div>
+    </div>
+
+    <div class="checkpoint">
+      <div>
+        <h2>Angular Projekt</h2>
+        <p>Auf arbeit ist meine erste größere Aufgabe, nach der Ausbildung, eine Formularanwendung mit Angular und NestJS zu Programmieren</p>
+        
+      </div>
+    </div>
+
+
   </div>
+
   </section>
 
 </body>
