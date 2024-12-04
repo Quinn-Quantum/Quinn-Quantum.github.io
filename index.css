@@ -133,24 +133,9 @@ nav li {
   box-shadow: 0 0 25px #f63d3dd5;
 }
 
-
-
-/* footer */
-
-footer li {
-  list-style: none;
-  display: inline-block !important;
-  padding-right: 10px;
+footer p{
+  background-color: rgb(174, 159, 58);
 }
-
-footer a:hover {
-  color: #023e7e;
-}
-
-footer a:hover::after {
-  width: 100%;
-}
-
 
 /* Navigation for mobile devices */
 @media  (max-width:768px) {
@@ -221,6 +206,10 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  }
+
+  footer p{
+    background-color: rgb(174, 159, 58);
   }
 
 }
