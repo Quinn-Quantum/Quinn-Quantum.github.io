@@ -17,6 +17,13 @@ section {
   padding: 50px 8%;
 }
 
+#projekte{
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 2em;
+  padding-bottom: 10px;;
+  background-color: burlywood;
+}
 
 
 /* Gallari */

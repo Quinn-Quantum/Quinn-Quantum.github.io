@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IT und Kunst</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../assets/img/IandPan.png">
+    <link rel="stylesheet" type="text/css" href="comics.css" />
+    <link rel="stylesheet" type="text/css" href="../../index.css" />
+
+    <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet" />
+  
+    <script src="../../index.js"></script>
+    <script src="./comics.js"></script>
+    
+  </head>
+<body>
+<header>
+    <nav>
+      <div id="navMenu">
+        <ul id="navList">
+      <li><a class='navLink' id="navHome"  href="../../index.html">Home</a></li>
+        <li><a class='navLink' id="navIt" href="../../develop/develop.html" >Anwendungen</a></li>
+          <li><a class='navLink' id="navArt" id="active" href="../../art/art.html" >Kunst Projekte</a></li>
+          <li><a class='navLink' id="navPnp" href="../../pnp/pnp.html" >Pan and Paper</a></li>
+            <!-- <li><a id="navContect" >Kontakt</a></li> -->
+          </ul>
+          <!-- Close button -->
+     <div id="navClose" onclick="removeMenu()">
+      <button type="button" onclick=""><i class="fa-solid fa-xmark"></i></button>
+     </div>
+    <!-- Toggle button -->
+     
+    </div>
+    <div id="navToggle" onclick="showMenu()">
+      <button type="button" onclick=""><i class="fa-solid fa-bars"></i></button>
+     </div>
+  </nav>
+  </header>
+
+
+  <div id="comic-container">
+    <img id="comic-image" src="./assets/warten/Seite_01.png" alt="Comic-Seite 1 von Warten" />
+  </div>
+  <div id="controls">
+    <button onclick="prevPage()">Zurück</button>
+    <span id="page-indicator">1 / 3</span>
+    <button onclick="nextPage()">Weiter</button>
+  </div>
+
+
+
+  
+</body>
+
+
+<footer>
+  <p> © Copyright 2024 – Alle Inhalte dieser Homepage sind, wenn nicht anders vermerkt, urheberrechtlich geschützt. Alle Rechte bleiben vorbehalten, Maria Siegmann</p>
+ </footer>
+</html>
