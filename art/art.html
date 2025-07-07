@@ -70,6 +70,17 @@
     </div>
   </section>
 
+
+  <div id="comic-container">
+    <img id="comic-image" src="./images/warten/Seite_1.png" alt="Comic-Seite 1 von Warten" />
+  </div>
+  <div id="controls">
+    <button onclick="prevPage()">Zurück</button>
+    <span id="page-indicator">1 / 3</span>
+    <button onclick="nextPage()">Weiter</button>
+  </div>
+
+
   <!-- 
   <i class="fa-solid fa-xmark"></i> x
   <i class="fa-solid fa-chevron-right"></i>
@@ -89,5 +100,36 @@
     'imageFadeDuration':100,
     'wrapAround':true
   })
+
+
+  const images = [
+    "./images/warten/Seite_1.png",
+    "./images/warten/Seite_2.png",
+    "./images/warten/Seite_3.png"
+  ];
+  
+  let currentPage = 0;
+
+function updateImage() {
+  const img = document.getElementById("comic-image");
+  img.src = images[currentPage];
+  document.getElementById("page-indicator").textContent = `${currentPage + 1} / ${images.length}`;
+}
+
+function nextPage() {
+  if (currentPage < images.length - 1) {
+    currentPage++;
+    updateImage();
+  }
+}
+
+function prevPage() {
+  if (currentPage > 0) {
+    currentPage--;
+    updateImage();
+  }
+}
+
+updateImage(); // initial aufrufen
 </script>
 </html>
