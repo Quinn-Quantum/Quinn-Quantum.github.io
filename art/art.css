@@ -63,8 +63,23 @@ section {
   width: 110%;
  }
 
+ #projekte button {
+  background-color: burlywood;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  /* padding: 10px 20px;
+  border: none;
+  margin: 0 10px;
+  border-radius: 5px; */
+  cursor: pointer;
+}
 
- button {
+ #projekte button:hover {
+  color: #5249fb;
+ }
+
+ #controls button {
   background-color: #444;
   color: white;
   padding: 10px 20px;
@@ -74,6 +89,6 @@ section {
   cursor: pointer;
 }
 
-button:hover {
+#controls button:hover {
   background-color: #666;
 }
