@@ -6,11 +6,11 @@ const images = [
   
   let currentPage = 0;
 
-function updateImage() {
-  const img = document.getElementById("comic-image");
-  img.src = images[currentPage];
-  document.getElementById("page-indicator").textContent = `${currentPage + 1} / ${images.length}`;
-}
+// function updateImage() {
+//   const img = document.getElementById("comic-image");
+//   img.src = images[currentPage];
+//   document.getElementById("page-indicator").textContent = `${currentPage + 1} / ${images.length}`;
+// }
 
 function nextPage() {
   if (currentPage < images.length - 1) {
